@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000;
+    font-family: 'Manjari', sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid black;
+    min-height: 100px;
+    height: 20vh;
+    font-size: 48px;
+}
+
+#header > div {
+    background-color: white;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#deck {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    padding: 20px;
+    min-height: 200px;
+    height: fit-content;
+}
+
+#adder {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    width: 250px;
+    min-height: 200px;
+    height: fit-content;
+    font-size: 24px;
+}
+
+#adder > div {
+    margin-top: 20px;
+    font-size: 100px;
+}
+
+#adder:onclick {
+    background-color: lightgrey;
+}
+
+.card {
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+    min-height: 200px;
+    height: fit-content;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid black;
+    min-height: 50px;
+    height: 10vh;
+}
+
+#footer > div {
+    background-color: white;
+}
