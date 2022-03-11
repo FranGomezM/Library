@@ -9,6 +9,27 @@
     <title>My library</title>
 </head>
 <body>
+    <div id="form" class="show">
+        <div>
+        <label for="imgRoot"> Image root:</label>
+        <input type="text" id="imgRoot">
+        <label for="bookName">Book name:</label>
+        <input type="text" id="bookName">
+        <label for="author">Author's name:</label>
+        <input type="text" id="author">
+        <label for="pages">Number of pages:</label>
+        <input type="text" id="pages">
+        <select name="read" id="read">
+            <option value="read">Already read</option>
+            <option value="notRead">Not read yet</option>
+            <option value="inProgress">In progress</option>
+        </select>
+        <div>
+        <button id="submit_btn">Submit</button>
+        <button id="closeButton">Cancel</button>
+        </div>
+        </div>
+    </div>
     <div id="header">
         <div>
             My library
@@ -17,7 +38,7 @@
     <div id="content">
         <div id="deck"></div>
         <button id="adder">
-            Add a new book...
+            Add a new book
             <div>+</div>
         </button>
     </div>
